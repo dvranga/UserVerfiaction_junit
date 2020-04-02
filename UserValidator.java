@@ -6,7 +6,7 @@ public class UserValidator {
     private static final String FIRST_NAME_PATTERN="^[A-Z]{1}[a-zA-Z]{2}[a-zA-z0-9]*";
     private static final String LAST_NAME_PATTERN="^[A-Z]{1}[a-zA-Z]{2}[a-zA-z0-9]*";
     private static final String MOBILE_NUMBER_PATTERN="^[0-9 ]{3}[6-9]{1}[0-9]{9}$";
-    private static final String EMAIL_PATTERN="^[a-zA-z]{3}[-_+.]{1}?[0-9]{3}?@(bridgelabz|gmail|yahoo|1|abc|a-zA-Z)(.com|.co|.net|.com.com)(.au|.in)?$";
+    private static final String EMAIL_PATTERN="^[a-zA-z]{3}[-_+.]{0,}?[0-9]{3}?@(bridgelabz|gmail|yahoo|1|abc|a-zA-Z)(.com|.co|.net|.com.com)([.]?[a-z]{2,})?$";
 
 
     public boolean validateFirstName(String firstName) {
